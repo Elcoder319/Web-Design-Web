@@ -106,9 +106,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
   background-color: #fff;
-  position: relative;
+  min-height: 80px;
 }
 .header .menu-icon {
   position: absolute;
@@ -166,7 +165,7 @@ a {
     left: 5;
     text-align: center;
     opacity: 0;
-    top: -100vh;
+    top: -130vh;
   }
   .header ul.links.open {
     opacity: 1;
@@ -247,20 +246,20 @@ a {
 
 /* End Landing */
 /* Start Found Us */
+.found-us .container {
+  display: flex;
+  align-items: center;
+}
 .found-us .container .image-found-us {
-  width: 600px;
+  width: 50vw;
 }
-@media (max-width: 767px) {
-  .found-us .container .image-found-us img {
-    margin: 20px auto;
-    max-width: 80%;
+@media (max-width: 990px) {
+  .found-us .container .image-found-us {
+    width: 80vw;
   }
 }
-@media (max-width: 460px) {
-  .found-us .container .image-found-us img {
-    max-width: 60% !important;
-    transform: translateX(-20px);
-  }
+.found-us .container .image-found-us img {
+  width: 100%;
 }
 .found-us .container .content-found-us {
   line-height: 2;
@@ -269,7 +268,7 @@ a {
   color: #0066FE;
 }
 .found-us .container .content-found-us h1 {
-  margin: 20px auto;
+  margin: 10px 0;
 }
 @media (max-width: 767px) {
   .found-us .container .content-found-us h1 {
